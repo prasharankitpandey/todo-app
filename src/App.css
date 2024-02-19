@@ -1,14 +1,21 @@
-.App{
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   height: 100vh;
   width: 100vw;
-  background: lightblue;
+  background: rgb(26, 20, 20);
 
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   background: lightcoral;
   height: 50%;
-  width: 50%;
+  width: 60%;
+  margin: 20px;
 }
 
 .highlight {
@@ -21,4 +28,51 @@
   font-size: 30px;
   color: blue;
   font-weight: bold;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px;
+
+}
+
+.listinput {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+
+}
+
+.listitem {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#name {
+  height: 25px;
+  flex: 1;
+}
+
+#att {
+  align-self: center;
+}
+
+.btn {
+  width: 80px;
+  height: 30px;
+}
+
+.taskname {
+  align-self: center;
+}
+
+.TodoList {
+  overflow: scroll;
 }
